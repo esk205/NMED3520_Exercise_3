@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>JavaScript and jQuery Practice</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stickman's Emotional Expressions!</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <h1>UN International Days</h1>
-    <a href="#!" id="hide-days"> Hide Non-Days </a>  
-    <section class="wrap">
-        <div class="box" id="num-19">November 19</div>
-        <div class="box" id="num-20">November 20</div>
-        <div class="box" id="num-21">November 21</div>
-        <div class="box" id="num-22">November 22</div>
-        <div class="box" id="num-23">November 23</div>
-    </section>
-    <!-- don't forget to add the JavaScript files -->
-    <script   src="https://code.jquery.com/jquery-3.7.1.min.js"   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>   
-    <script src = 'js/scripts.js'></script>
-</body>
+  <div class="wrap">
+    <div class="box">
+      <h2> Select a button to change the emotional state of the Stickman</h2>
+      <div class="buttons">
+        <button class="image-btn" data-image="imgs/angry.JPG">Angry</button>
+        <button class="image-btn" data-image="imgs/happy.JPG">Happy</button>
+        <button class="image-btn" data-image="imgs/love.JPG">Love</button>
+        <button class="image-btn" data-image="imgs/sad.JPG">Sad</button>
+        <button class="image-btn" data-image="imgs/surprised.JPG">Surprised</button>
+      </div>
+      <div class="image-container">
+        <img id="displayed-image" src="imgs/angry.JPG" alt="imgs/angry.JPG" />
+      </div>
+    </div>
+  </div>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>   
+  <script src="js/scripts.js"></script>
+</body>
 </html>
